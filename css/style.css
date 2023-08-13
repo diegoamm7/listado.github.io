@@ -1,0 +1,128 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background: #DAEBF2;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.curved{
+    position: relative;
+    background: #3286A0;
+    height: 30vh;
+    width: 100%;
+    border-bottom-left-radius: 20% 20%;
+    border-bottom-right-radius: 20% 20%;
+}
+header h1{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+    padding: 30px;
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+main{
+    flex: 1;
+}
+.input h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 0px;
+    padding: 5px;
+}
+.input{
+    text-align: center;
+    margin: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    flex: 1;
+}
+.input #barra{
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    width: 200px;
+    height: 30px;
+}
+button {
+    /* Variables */
+    --button_radius: 10px;
+    --button_color: #e8e8e8;
+    --button_outline_color: #000000;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    border-radius: var(--button_radius);
+    background: var(--button_outline_color);
+    margin-left: 7px;
+}
+.button_top {
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid var(--button_outline_color);
+    border-radius: var(--button_radius);
+    padding: 12px 12px;
+    background: var(--button_color);
+    color: var(--button_outline_color);
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
+}
+
+button:hover .button_top {
+    /* Pull the button upwards when hovered */
+    transform: translateY(-0.33em);
+}
+
+button:active .button_top {
+    /* Push the button downwards when pressed */
+    transform: translateY(0);
+}
+ul{
+    padding: 0;
+}
+ul li{
+    list-style: none;
+    display: flex;
+    margin: 12px;
+    padding: 8px;
+    border-radius: 3px;
+    background:  #3596B5;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+footer{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: #4B4453;
+    width: 100%;
+}
+footer a{
+    color:aliceblue;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+}
+.completed{
+    text-decoration: line-through;
+}
+input[type="checkbox"] {
+    pointer-events: none;
+}
